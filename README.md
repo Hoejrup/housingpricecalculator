@@ -49,7 +49,7 @@ For example:
 This will generate a `*.csv`-file with the results of the scraping. You can now use that csv-file to calculate a suggested price based on the house's area and size in m2:
 
 ```shell
-> python -m predict_sales_price 8320_maarslet.csv 180
+> python -m predict_sales_price data/8320_maarslet.csv 180
 ```
 
 ### Zip_code search
