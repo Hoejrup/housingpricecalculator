@@ -169,7 +169,7 @@ def make_request_zipcode(zip_code: str, property_type: PropertyType) -> bs4.Beau
     """Make request to boliga.dk."""
     url = (f'https://www.boliga.dk/salg/'
            f'resultater?searchTab=1&propertyType={property_type.value}&zipcodeFrom={zip_code}&'
-           f'zipcodeTo={zip_code}'
+           f'zipcodeTo={zip_code}&'
            f'sort=date-d&page=1')
     logging.info(f'Request url: {url}')
     response = requests.get(url)
